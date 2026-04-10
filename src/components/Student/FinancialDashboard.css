@@ -1,0 +1,115 @@
+.financial-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .financial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .financial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.financial-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.financial-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.financial-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+  margin: 0 auto 1rem;
+}
+
+.financial-icon.primary {
+  background-color: #7b1f3a;
+}
+
+.financial-icon.success {
+  background-color: #10b981;
+}
+
+.financial-icon.warning {
+  background-color: #f59e0b;
+}
+
+.financial-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.financial-card p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.amount-display {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7b1f3a;
+  margin-bottom: 0.25rem;
+}
+
+.amount-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fee-table th,
+.fee-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.fee-table th {
+  font-weight: 600;
+  color: #374151;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fee-table td {
+  border-bottom: 1px solid #f3f4f6;
+  color: #374151;
+}
+
+.fee-table th:nth-child(2),
+.fee-table .amount {
+  text-align: right;
+}
+
+.fee-table .amount {
+  font-weight: 600;
+  color: #111827;
+}

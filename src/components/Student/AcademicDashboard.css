@@ -1,0 +1,202 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fafafa 0%, #f4f4f5 50%, #fafafa 100%);
+  background-attachment: fixed;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.welcome-section {
+  margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .academic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.academic-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(228, 228, 231, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.academic-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 0 20px rgba(123, 31, 58, 0.15);
+  transform: translateY(-6px);
+  border-color: rgba(123, 31, 58, 0.3);
+}
+
+.academic-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #7B1F3A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+  margin: 0 auto 1rem;
+}
+
+.academic-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.academic-card p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.status-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.status-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #7B1F3A;
+}
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.document-item:hover {
+  border-color: #7B1F3A;
+  background-color: rgba(123, 31, 58, 0.05);
+}
+
+.document-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: rgba(123, 31, 58, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #7B1F3A;
+}
+
+.document-info {
+  flex: 1;
+  text-align: left;
+}
+
+.document-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.document-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: #7B1F3A;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #9B2F4A;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(123, 31, 58, 0.25);
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+}

@@ -1,0 +1,79 @@
+.deadlines-card .view-calendar {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #7B1F3A;
+}
+
+.deadline-list {
+  padding: 0.5rem 1.25rem 1.25rem;
+}
+
+.deadline-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.deadline-item:last-child {
+  border-bottom: none;
+}
+
+.deadline-date {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #F3F4F6;
+  border-radius: 0.5rem;
+}
+
+.deadline-date .day {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1;
+}
+
+.deadline-date .month {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+}
+
+.deadline-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.deadline-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1F2937;
+  margin-bottom: 0.25rem;
+}
+
+.deadline-time {
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.deadline-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6B7280;
+  padding: 0.25rem 0.5rem;
+  background-color: #F3F4F6;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+
+.deadline-badge.urgent {
+  background-color: #FEE2E2;
+  color: #EF4444;
+}

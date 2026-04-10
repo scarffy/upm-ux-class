@@ -1,0 +1,395 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .overview-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.overview-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.overview-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.overview-content h4 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.overview-content p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Section */
+.section-container {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Students Grid */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .students-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.student-card-supervisor {
+  background-color: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.student-card-supervisor:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.student-header-supervisor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.student-avatar-supervisor {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #7b1f3a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.student-info-supervisor h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.student-info-supervisor p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.student-program-tag {
+  font-size: 0.75rem;
+  color: #7b1f3a;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+
+.student-progress-supervisor {
+  padding: 1.25rem;
+}
+
+.progress-header-supervisor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.progress-header-supervisor span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progress-value-supervisor {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #7b1f3a;
+}
+
+.progress-bar-supervisor {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill-supervisor {
+  height: 100%;
+  background-color: #7b1f3a;
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+.student-actions-supervisor {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.student-actions-supervisor .btn {
+  flex: 1;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: #7b1f3a;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #5a1630;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #7b1f3a;
+  border: 1.5px solid #7b1f3a;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #7b1f3a;
+  color: white;
+}
+
+/* Two Column Layout */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .two-column-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Meetings */
+.meetings-list-supervisor {
+  padding: 0.5rem 1.25rem 1.25rem;
+}
+
+.meeting-item-supervisor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.meeting-item-supervisor:last-child {
+  border-bottom: none;
+}
+
+.meeting-date-supervisor {
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 50px;
+}
+
+.meeting-date-supervisor .day {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.meeting-date-supervisor .month {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.meeting-details-supervisor {
+  flex: 1;
+  min-width: 0;
+}
+
+.meeting-details-supervisor h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.meeting-details-supervisor p {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.meeting-actions-supervisor {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn-supervisor {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.icon-btn-supervisor:hover {
+  background-color: #7b1f3a;
+  color: white;
+}
+
+/* Pending Reviews */
+.view-all-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #7b1f3a;
+}
+
+.reviews-list-supervisor {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.review-item-supervisor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  margin-bottom: 0.5rem;
+}
+
+.review-item-supervisor:last-child {
+  margin-bottom: 0;
+}
+
+.review-left {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.review-icon-supervisor {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: #9b2f4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.review-info-supervisor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.review-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.review-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-item-supervisor .btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.btn-primary.btn-small {
+  background-color: #7b1f3a;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary.btn-small:hover {
+  background-color: #5a1630;
+}

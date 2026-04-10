@@ -1,0 +1,578 @@
+/* Reviews Page Styles */
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.reviews-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--upm-maroon);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--upm-maroon-dark);
+}
+
+.reviews-header h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.reviews-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid var(--gray-200);
+  min-width: 100px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--upm-maroon);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+/* Filters */
+.reviews-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.reviews-filters .search-box {
+  flex: 1;
+  position: relative;
+  max-width: 400px;
+}
+
+.reviews-filters .search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  transition: all 0.2s;
+}
+
+.reviews-filters .search-box input:focus {
+  outline: none;
+  border-color: var(--upm-maroon);
+  box-shadow: 0 0 0 3px rgba(123, 31, 58, 0.1);
+}
+
+.reviews-filters .search-box svg {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-400);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group select {
+  padding: 0.75rem 2rem 0.75rem 1rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  background: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: var(--upm-maroon);
+}
+
+/* Reviews Table */
+.reviews-table-container {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+}
+
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reviews-table th {
+  background: var(--gray-50);
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.reviews-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--gray-100);
+  vertical-align: middle;
+}
+
+.reviews-table tr:last-child td {
+  border-bottom: none;
+}
+
+.reviews-table tr:hover {
+  background: var(--gray-50);
+}
+
+.reviews-table tr.highlight {
+  background: rgba(59, 130, 246, 0.03);
+}
+
+/* Review Title Cell */
+.review-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.review-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--upm-maroon) 0%, var(--upm-maroon-dark) 100%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.review-title {
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.125rem;
+}
+
+.review-type {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+/* Student Info */
+.review-student {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-name {
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.student-id {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+/* Status & Priority Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.status-progress {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.status-completed {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.status-rejected {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.priority-high {
+  background: #FEE2E2;
+  color: #DC2626;
+}
+
+.priority-medium {
+  background: #FEF3C7;
+  color: #D97706;
+}
+
+.priority-low {
+  background: #E5E7EB;
+  color: #4B5563;
+}
+
+/* Deadline */
+.deadline {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.deadline.urgent {
+  color: #DC2626;
+  font-weight: 600;
+}
+
+/* Review Actions */
+.review-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-success {
+  background: #10B981;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #059669;
+}
+
+.btn-danger {
+  background: #EF4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #DC2626;
+}
+
+/* No Reviews */
+.no-reviews {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--gray-400);
+}
+
+.no-reviews p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--gray-500);
+}
+
+/* Review Modal */
+.review-modal {
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.review-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.review-modal .modal-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.modal-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-100);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.review-modal-body {
+  padding: 1.5rem;
+}
+
+.review-modal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.info-row svg {
+  color: var(--upm-maroon);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.info-row label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.125rem;
+}
+
+.info-row p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  margin: 0;
+}
+
+.urgent-text {
+  color: #DC2626;
+  font-weight: 600;
+}
+
+.review-modal-description {
+  background: var(--gray-50);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-modal-description h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.review-modal-description p {
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.review-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.review-modal-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--gray-200);
+  background: white;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.review-modal-actions .btn:hover {
+  background: var(--gray-50);
+  border-color: var(--gray-300);
+}
+
+.review-modal-decision {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 1.5rem;
+}
+
+.review-modal-decision h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+.decision-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.decision-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.decision-actions .btn-success {
+  background: #10B981;
+  color: white;
+}
+
+.decision-actions .btn-success:hover {
+  background: #059669;
+}
+
+.decision-actions .btn-danger {
+  background: #EF4444;
+  color: white;
+}
+
+.decision-actions .btn-danger:hover {
+  background: #DC2626;
+}
+
+.decision-actions .btn-primary {
+  background: var(--upm-maroon);
+  color: white;
+}
+
+.decision-actions .btn-primary:hover {
+  background: var(--upm-maroon-dark);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .reviews-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .reviews-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .reviews-table-container {
+    overflow-x: auto;
+  }
+
+  .reviews-table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .reviews-filters .search-box {
+    max-width: none;
+  }
+
+  .reviews-stats {
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .review-modal-info {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-actions {
+    flex-direction: column;
+  }
+
+  .decision-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

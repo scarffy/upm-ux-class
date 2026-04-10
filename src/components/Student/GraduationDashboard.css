@@ -1,0 +1,222 @@
+.graduation-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 100px;
+}
+
+.step-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.step-circle.completed {
+  background-color: #10B981;
+  color: white;
+  fill: white;
+}
+
+.step-circle.active {
+  background-color: #7B1F3A;
+  color: white;
+  border: 3px solid rgba(123, 31, 58, 0.2);
+}
+
+.step-circle.pending {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  border: 2px solid #e5e7eb;
+}
+
+.step-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+}
+
+.step-status {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.progress-connector {
+  flex: 1;
+  height: 3px;
+  background-color: #e5e7eb;
+  min-width: 40px;
+  max-width: 60px;
+}
+
+.progress-connector.completed {
+  background-color: #10B981;
+}
+
+.graduation-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .graduation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.graduation-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+
+.graduation-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.graduation-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+  margin-bottom: 1rem;
+}
+
+.graduation-icon.primary {
+  background-color: #7B1F3A;
+}
+
+.graduation-icon.success {
+  background-color: #10B981;
+}
+
+.graduation-icon.warning {
+  background-color: #f59e0b;
+}
+
+.graduation-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.graduation-card p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.clearance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.clearance-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  border-left: 4px solid #d1d5db;
+}
+
+.clearance-item.cleared {
+  border-left-color: #10B981;
+  background-color: #d1fae5;
+}
+
+.clearance-item.pending {
+  border-left-color: #f59e0b;
+  background-color: #fef3c7;
+}
+
+.clearance-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+}
+
+.clearance-icon.cleared {
+  background-color: #10B981;
+}
+
+.clearance-icon.pending {
+  background-color: #f59e0b;
+}
+
+.clearance-info {
+  flex: 1;
+}
+
+.clearance-dept {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.9375rem;
+}
+
+.clearance-status {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.convocation-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.detail-item {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.detail-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7B1F3A;
+}
+
+.detail-label {
+  font-size: 0.8125rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}

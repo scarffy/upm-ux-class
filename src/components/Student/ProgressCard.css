@@ -1,0 +1,102 @@
+.progress-card {
+  padding-bottom: 1.5rem;
+}
+
+.progress-ring-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.progress-ring {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.progress-ring-svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.progress-percent {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.progress-label {
+  font-size: 0.75rem;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.status-in-progress {
+  background-color: #DBEAFE;
+  color: #3B82F6;
+}
+
+.progress-details {
+  padding: 0 1.25rem;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.progress-item:last-child {
+  border-bottom: none;
+}
+
+.progress-stage {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.progress-stage.completed {
+  color: #10B981;
+}
+
+.progress-stage.in-progress {
+  color: #3B82F6;
+}
+
+.progress-stage.pending {
+  color: #9CA3AF;
+}
+
+.check-icon {
+  color: #10B981;
+}
+
+.stage-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #F3F4F6;
+  color: #6B7280;
+  border-radius: 0.25rem;
+}

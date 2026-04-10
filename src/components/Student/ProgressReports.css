@@ -1,0 +1,188 @@
+.semester-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.semester-tab {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #6b7280;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.semester-tab:hover {
+  color: #7B1F3A;
+  background-color: rgba(123, 31, 58, 0.1);
+}
+
+.semester-tab.active {
+  color: #7B1F3A;
+  background-color: rgba(123, 31, 58, 0.1);
+}
+
+.report-status-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .report-status-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.status-metric {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.status-metric .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7B1F3A;
+}
+
+.status-metric .label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.deadline-alert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fef3c7;
+  border-radius: 0.75rem;
+  border-left: 4px solid #f59e0b;
+  margin-bottom: 1.5rem;
+}
+
+.deadline-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+  flex-shrink: 0;
+}
+
+.deadline-content h4 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.deadline-content p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.submit-report-card {
+  background: linear-gradient(135deg, #7B1F3A 0%, #9B2F4A 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.submit-report-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.submit-report-card p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.report-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.report-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #10B981;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #10B981;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 0.75rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #7B1F3A;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
