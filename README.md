@@ -2,6 +2,8 @@
 
 A modern React application for Universiti Putra Malaysia's School of Graduate Studies (SGS), designed to improve the postgraduate student experience.
 
+**Live Demo:** https://uxclass.netlify.app
+
 **Created by:** Hazwani, Yinzhu, Faris, Ze Liang  
 **Date:** April 2026
 
